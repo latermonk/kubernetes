@@ -33,9 +33,11 @@ hostname = x.x.x.x(Your IP address)
 db_password = root123456    
 
 ###   正式安装    
-sh   install.sh   
+sh   install.sh     
 
-
+查看进度及log:    
+ docker-compose ps   
+ 
 
 
 #  配置harbor  
