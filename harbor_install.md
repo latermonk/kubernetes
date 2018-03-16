@@ -25,7 +25,7 @@ docker-compose --version
 ##  安装   
 
 ###   下载离线或者在线安装包    
-(https://github.com/vmware/harbor/releases)[https://github.com/vmware/harbor/releases]    
+https://github.com/vmware/harbor/releases   
 
 ###   修改harbor.cfg文件
 
