@@ -69,3 +69,7 @@ systemctl restart docker
 
 
 
+reference:
+
+https://github.com/vmware/harbor/issues/2156
+
