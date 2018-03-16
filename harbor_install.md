@@ -4,7 +4,7 @@
 
 ###   安装docker 
 
-(https://docs.docker.com/install/linux/docker-ce/centos/)[https://docs.docker.com/install/linux/docker-ce/centos/]
+https://docs.docker.com/install/linux/docker-ce/centos/
 
 ###   安装 docker compose
 
