@@ -40,12 +40,30 @@ sh   install.sh
 
 #  配置harbor  
 
-浏览器登录 localhost     
+##   浏览器登录 localhost     
 
 账号和密码为：  
 
 admin    
-Harbor12345  
+Harbor12345     
+
+
+##   docker端的设置   
+
+vim /etc/systemd/system/docker.service.d/docker.conf 
+
+添加：
+
+[Service]  
+ExecStart=  
+ExecStart=/usr/bin/docker daemon --insecure-registry=192.168.1.104   
+
+
+然后：   
+systemctl daemon-reload   
+systemctl restart docker     
+
+
 
 
 
