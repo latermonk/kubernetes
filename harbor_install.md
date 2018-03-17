@@ -132,12 +132,12 @@ docker-compose start
 
 
 ```
-浏览器访问：   LOCAL_IP
+浏览器访问：   LOCAL_IP  
 ```
 
 
 
-reference:
+**reference**:
 
 https://github.com/vmware/harbor/issues/2156    
 
