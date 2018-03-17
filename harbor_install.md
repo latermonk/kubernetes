@@ -12,14 +12,27 @@ https://docs.docker.com/install/linux/docker-ce/centos/
 
 ####  三步：   
 1.下载镜像       
+
+
+```
 curl -L https://github.com/docker/compose/releases/download/1.19.0/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
+```
+
 
 2.修改属性为可执行    
- chmod +x /usr/local/bin/docker-compose     
+
+```
+ chmod +x /usr/local/bin/docker-compose 
+```
+    
  
 3.测试可用性 & 查看版本      
 
-docker-compose --version        
+
+```
+docker-compose --version       
+```
+ 
 
 
 ##  安装   
@@ -36,7 +49,11 @@ db_password = root123456
 sh   install.sh     
 
 查看进度及log:    
+
+```
  docker-compose ps   
+```
+
  
 
 
