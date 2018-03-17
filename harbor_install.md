@@ -49,21 +49,28 @@ sh   install.sh
 admin    
 Harbor12345     
 
+##  创建项目并把新建的用户分配到项目
 
 ##   docker端的设置   
 
-vim /etc/systemd/system/docker.service.d/docker.conf 
 
-添加：
+###   vim /etc/sysconfig/docker 
 
-[Service]  
-ExecStart=  
-ExecStart=/usr/bin/docker daemon --insecure-registry=192.168.1.104   
+Add the words: 
+
+OPTIONS="--insecure-registry x.x.xx.x[Your IP address]"
 
 
-然后：   
-systemctl daemon-reload   
-systemctl restart docker     
+## vim /usr/lib/systemd/system/docker.service
+
+Add the words: EnvironmentFile=-/etc/sysconfig/docker   
+
+Edit the words: ExecStart=/usr/bin/dockerd $OPTIONS
+
+####  systemctl daemon-reload      
+####  systemctl restart docker      
+####  docker-compose stop      
+####  docker-compose start          
 
 
 
