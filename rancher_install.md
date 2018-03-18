@@ -18,3 +18,14 @@ vim /etc/docker/daemon.json
 }
 ```
 
+
+
+
+##   安装harbor     
+
+
+##   安装 Rancher    
+
+参考：
+http://rancher.com/docs/rancher/v1.6/zh/installing-rancher/installing-server/
+
