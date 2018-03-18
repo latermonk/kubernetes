@@ -11,6 +11,10 @@ https://www.docker-cn.com/registry-mirror
 
 vim /etc/docker/daemon.json
 
-'{
+
+```
+{
   "registry-mirrors": ["https://registry.docker-cn.com"]
-}'
+}
+```
+
