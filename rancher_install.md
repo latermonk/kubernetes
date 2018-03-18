@@ -29,3 +29,10 @@ vim /etc/docker/daemon.json
 参考：
 http://rancher.com/docs/rancher/v1.6/zh/installing-rancher/installing-server/
 
+
+ docker run -d --restart=unless-stopped -p 8080:8080 rancher/server     
+ 
+ 
+ 然后浏览器打开 8080端口即可
+
+
