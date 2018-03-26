@@ -1,5 +1,7 @@
 #!/bin/bash
 
+
+# test echo 
 echo "Hello world"
 echo hello
 if [ $?  != 0 ]
@@ -9,6 +11,19 @@ else
 	echo "sucess !"
 fi
 
+# if root user ?
+root=$(id -u)
+
+if [ "$root" -ne 0 ] ;then
+
+    echo "must run as root"
+
+    exit 1
+
+fi
+
+
+
 # start script
 
 # 关闭swap
@@ -16,13 +31,5 @@ swapoff  -a
 
 
 
-```
-考虑几个问题：
 
-如何在脚本运行关键语句不正确时停止脚本的运行？
-
-如何在脚本运行非关键语句不正确的时候忽略错误继续执行，但是在脚本执行的最后对错误进行告警？
-
-
-```
 
