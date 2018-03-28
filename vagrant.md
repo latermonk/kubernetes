@@ -10,3 +10,8 @@ vagrant ssh
 
 
 vagrant package centos7 --output  centos7.box  --vagrantfile Vagrantfile   
+
+
+参考：    
+
+**https://blog.csdn.net/yjk13703623757/article/details/70040797**
